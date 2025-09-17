@@ -1,0 +1,6 @@
+type User { id: ID!, email: String!, displayName: String }
+type Session { id: ID!, sessionDate: AWSDate!, focus: String, targets: AWSJSON }
+type PlanInstance { id: ID!, status: String!, sessions: [Session!]! }
+
+type Query { me: User!, plan(planId: ID!): PlanInstance }
+type Mutation { requestPlanAdjustment(planId: ID!, reason: String!): AWSJSON }

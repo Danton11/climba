@@ -1,0 +1,19 @@
+{
+  "name": "@climba/infra-cdk",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy --all"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.149.0",
+    "constructs": "10.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

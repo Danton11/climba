@@ -1,0 +1,21 @@
+{
+  "name": "climba",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "infra/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "codegen": "turbo run codegen",
+    "infra:synth": "pnpm --filter infra/cdk cdk synth",
+    "infra:deploy": "pnpm --filter infra/cdk cdk deploy --all"
+  }
+}
