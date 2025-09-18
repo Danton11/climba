@@ -3,6 +3,8 @@
     "name": "Climba",
     "slug": "climba",
     "scheme": "climba",
-    "sdkVersion": "51.0.0"
+    "sdkVersion": "51.0.0",
+    "entryPoint": "./App.tsx"
   }
 }
+
